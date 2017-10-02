@@ -1,0 +1,23 @@
+{
+  "name": "ar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "ws --https --index.root=."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmarsden/ar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmarsden/ar/issues"
+  },
+  "homepage": "https://github.com/nmarsden/ar#readme",
+  "devDependencies": {
+    "local-web-server": "^2.2.4"
+  }
+}
