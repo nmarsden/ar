@@ -249,9 +249,9 @@
 
       arWorldRoot.add( object );
 
-//      onRenderFcts.push(function(){
-//        object.rotation.x += 0.1
-//      })
+      onRenderFcts.push(function(){
+        object.rotation.y -= 0.05
+      })
 
       onRenderFcts.push(function(){
         object.scale.set(0.1, 0.1, 0.1);
