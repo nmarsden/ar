@@ -1,0 +1,168 @@
+
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+    background-color: #F2F2F2;
+    background-repeat: repeat;
+    background-position: center top;
+    padding-top: 10px;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #2061e0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main-banner {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 10px;
+    border-bottom: 2px solid #470000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-size: 145px 100px;
+    width: 145px;
+    height: 100px;
+    background-image: url(lib/three.js/Hackathon%20logo%20x2/hackathon_logo_23.png);
+    flex-shrink: 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 45px;
+    color: #470000;
+}
+
+.tag-line {
+    font-style: italic;
+}
+
+.heading {
+    font-size: 30px;
+    color: #470000;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.content {
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.warning {
+    color: darkred;
+    font-style: italic;
+}
+
+.emphasis {
+    font-weight: bold;
+}
+
+.example-container {
+    display: flex;
+    margin: 20px auto;
+    background-color: rgba(245, 245, 245, 0.1);
+    max-width: 1000px;
+    align-items: flex-start;
+}
+
+@media(max-width: 800px) {
+    .example-container {
+        flex-direction: column;
+    }
+
+    .example-container .example-screenshot {
+        flex: 0 0 300px;
+    }
+}
+
+.example-ar-code {
+    background-color: rgba(22, 22, 22, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.example-screenshot {
+    flex: 0 0 375px;
+    background-color: rgba(22, 22, 22, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 375px 675px;
+    background-position-y: -71px;
+    width: 375px;
+    height: 525px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 300ms ease;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.screenshot--hackathon-logo {
+    background-image: url('screenshots/screenshot_hackathon_logo.jpg');
+}
+
+.screenshot--aconex-logo {
+    background-image: url('screenshots/screenshot_aconex_logo.jpg');
+}
+
+.screenshot--structural {
+    background-image: url('screenshots/screenshot_structural.jpg');
+}
+
+.screenshot--insights {
+    background-image: url('screenshots/screenshot_insights.jpg');
+}
+
+
+.example-details {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.example-details-header {
+    margin: 20px auto;
+    background-color: rgba(245, 245, 245, 0.1);
+    max-width: 1000px;
+}
+
+.example-title {
+    display: inline-block;
+    font-size: 32px;
+    line-height: 32px;
+    color: #191970;
+}
+
+.example-details-item {
+    margin: 20px auto;
+    background-color: rgba(245, 245, 245, 0.1);
+    max-width: 1000px;
+}
+
+.example-details-item-label {
+    display: inline-block;
+    font-weight: 800;
+}
+
+.example-details-item-content {
+    display: inline-block;
+    margin-top: 5px;
+}
