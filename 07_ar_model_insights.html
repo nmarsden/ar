@@ -236,12 +236,12 @@
 
   var mtlLoader = new THREE.MTLLoader();
   mtlLoader.setPath( 'lib/three.js/' );
-  mtlLoader.load( 'house_logo_insights_take_2.mtl', function( materials ) {
+  mtlLoader.load( 'house_logo_insights_v2.mtl', function( materials ) {
     materials.preload();
     var objLoader = new THREE.OBJLoader();
     objLoader.setMaterials( materials );
     objLoader.setPath( 'lib/three.js/' );
-    objLoader.load( 'house_logo_insights_take_2.obj', function ( object ) {
+    objLoader.load( 'house_logo_insights_v2.obj', function ( object ) {
 
 //    object.position.y = -15;
 
