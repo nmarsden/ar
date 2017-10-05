@@ -2,12 +2,22 @@
 body {
     font-family: sans-serif;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
     color: #333333;
     background-color: #F2F2F2;
     background-repeat: repeat;
     background-position: center top;
-    padding-top: 10px;
+    padding: 10px;
+}
+
+.page {
+    margin: 0 auto;
+    min-width: 530px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 a,
@@ -24,7 +34,7 @@ a:hover {
     margin: 0 auto;
     max-width: 1000px;
     padding: 10px;
-    border-bottom: 2px solid #470000;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,11 +67,29 @@ a:hover {
     color: #470000;
     text-align: center;
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
+    border-top: 2px solid #470000;
+    border-bottom: 2px solid #470000;
+}
+
+.example-heading {
+    margin-top: 40px;
+    font-size: 32px;
+    line-height: 32px;
+    color: #191970;
+}
+
+.example-launch-btn {
+    font-size: 32px;
+    border: 2px solid #191970;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(245, 245, 245, 0.1);
+    max-width: 1000px;
 }
 
 .content {
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 1000px;
 }
 
@@ -80,15 +108,12 @@ a:hover {
     background-color: rgba(245, 245, 245, 0.1);
     max-width: 1000px;
     align-items: flex-start;
+    align-content: center;
 }
 
 @media(max-width: 800px) {
     .example-container {
         flex-direction: column;
-    }
-
-    .example-container .example-screenshot {
-        flex: 0 0 300px;
     }
 }
 
@@ -99,7 +124,6 @@ a:hover {
 }
 
 .example-screenshot {
-    flex: 0 0 375px;
     background-color: rgba(22, 22, 22, 0.1);
     background-repeat: no-repeat;
     background-position: center;
@@ -108,11 +132,6 @@ a:hover {
     width: 375px;
     height: 525px;
     margin-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 300ms ease;
-    opacity: 0.8;
     margin-bottom: 10px;
 }
 
@@ -134,8 +153,11 @@ a:hover {
 
 
 .example-details {
-    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     margin-right: 10px;
+    justify-content: center;
 }
 
 .example-details-header {
@@ -152,17 +174,15 @@ a:hover {
 }
 
 .example-details-item {
-    margin: 20px auto;
+    margin: 0 20px auto;
     background-color: rgba(245, 245, 245, 0.1);
     max-width: 1000px;
 }
 
 .example-details-item-label {
-    display: inline-block;
     font-weight: 800;
 }
 
 .example-details-item-content {
-    display: inline-block;
     margin-top: 5px;
 }
