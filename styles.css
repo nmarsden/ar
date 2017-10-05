@@ -118,13 +118,12 @@ a:hover {
 }
 
 .example-ar-code {
-    background-color: rgba(22, 22, 22, 0.1);
     background-repeat: no-repeat;
     background-position: center;
+    padding-bottom: 10px;
 }
 
 .example-screenshot {
-    background-color: rgba(22, 22, 22, 0.1);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 375px 675px;
